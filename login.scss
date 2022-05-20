@@ -1,0 +1,551 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+/* Resets */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+//variables
+$black: #1c1c1c;
+$yellow: #f8ce15;
+$white: #fefefe;
+$grey: #4b4844;
+$light-grey: rgb(146, 145, 145);
+$platinum: #dcd8d2;
+
+@mixin button {
+    background-color: red;
+    border-radius: 50px;
+    border: 2px solid red;
+    cursor: pointer;
+    color: white;
+    padding: 1% 1%;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+body {
+    position: relative;
+    .ventana {
+        position: absolute;
+        top: 35%;
+        left: 30%;
+        background-color: rgb(229, 236, 253);
+        width: 40%;
+        color: $black;
+        text-align: center;
+        padding: 5% 8%;
+        border: 3px solid rgb(189, 189, 189);
+        border-radius: 20px;
+        .textoVentana {
+            font-size: 1.6em;
+            font-weight: 700;
+            width: 100%
+        }
+        .botonVentana {
+            @include button;
+            margin-top: 20%;
+            font-size: 1.3em;
+            width: 100%;
+        }    
+    }
+    .hidden {
+        display: none;
+    }
+    header {
+        padding-bottom: 1%;
+        h1 {
+            display: none;
+        }
+        .navContainer {
+            width: 100%;
+            display: flex;
+            padding: 0% 0.5%;
+            background-color: $yellow;
+            .logo {
+                width: 100px;
+                height: auto;
+                cursor: pointer;
+            }
+            .menu {
+                margin-top: 1%;
+                margin-left: 10%;
+                width: 80%;
+                .inlineList {
+                    display: flex;
+                    padding-top: 2%;
+                    .navList {
+                        list-style: none;
+                        font-weight: 700;
+                        margin-left: 13%;
+                        .aLista {
+                            text-decoration: none;
+                            color: $black;
+                            &:hover {
+                                color: $white;
+                            }
+                        }
+                    }
+                }    
+            }
+            .menu2 {
+                display: none;
+                position: relative;
+                width: 80%;
+                .aCart {
+                    text-decoration: none;
+                    color: white;
+                    margin-top: 2%;
+                    margin-left: 70%;
+                    .cart {
+                        font-size: 0.8em;
+                        position: absolute;
+                        top: 26%;
+                        left: 90%;
+                        color: $white;
+                        &:hover {
+                            color: $black;
+                        }
+                    }
+                }
+                .burguerMenu {
+                    &:hover .dropdown {
+                        display: block;
+                    }
+                    .burger {
+                        font-size: 1.1em;
+                        position: absolute;
+                        top: 25%;
+                        left: 102%;
+                        color: $white;
+                        &:hover {
+                            color: $black;
+                        }
+                    }
+                    .dropdown {
+                        display: none;
+                        position: absolute;
+                        top: 56%;
+                        left: 85%;
+                        width: 20%;
+                        padding: 3% 22% 3% 3%;
+                        z-index: 5;
+                        background-color: $black;
+                        .navList {
+                            list-style: none;
+                            padding: 5% 5%;
+                            .aLista {
+                                text-decoration: none;
+                                list-style: none;
+                                font-weight: 800;
+                                color: $white;
+                                font-size: 0.9em;
+                                &:hover {
+                                    color: $yellow;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }   
+    }
+
+    main {
+        h2 {
+            text-align: center;
+            margin-top: 3%;
+            font-weight: 700;
+        }
+        .form {
+            color: black;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid $grey;
+            width: 35%;
+            margin: auto;
+            margin-top: 4%;
+            padding: 2% 4% 4% 4%;
+            border-radius: 30px;
+            label {
+                .error input {
+                    border-color: #ff6b5b;
+                }
+                small {
+                    visibility: hidden;
+                    color: #ff6b5b;
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+                small.error {
+                    visibility: visible;
+                }
+            }
+            img {
+                width: 300px;
+                height: 300px;
+                margin:auto;
+            }
+            .userInfo {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 5%;
+                input {
+                    padding: 2% 2%;
+                    margin-top: 3%;
+                }
+            }
+            .userType {
+                margin-bottom: 3%;
+                input {
+                    margin-right: 4%;
+                }
+            }
+            a {
+                text-decoration: none;
+                margin-left: 7%;
+                &:hover {
+                    color: $yellow;
+                }
+            }
+            button {
+                @include button;
+                margin-top: 8%;
+                &:hover {
+                    background-color: black;
+                    border: 2px solid black;
+                }
+                a {
+                    margin-right: 9%;
+                    text-decoration: none;
+                    color: white;
+                }
+            }   
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5%;
+        padding: 3% 6%;
+        background-color: $black;
+        .cajaTienda {
+            width: 30%;
+            .pb2 {
+                color: $white;
+                margin-bottom: 15%;
+            }    
+            .logo2 {
+                width: 150px;
+                height: auto;
+                margin-bottom: 5%;
+            }
+            .redes {
+                display: flex;
+                flex-direction: row;
+                a {
+                    margin-right: 5%;
+                    .imgRedes {
+                        width: 30px;
+                        height: 27px;
+                    }
+                }
+            }
+        }
+        .cajaLinks {
+            width: 30%;
+            margin-left: 18%;
+            margin-top: 1%;
+            .pb3 {
+                color: $white;
+                font-weight: 800;
+                margin-bottom: 10%;
+                font-size: 1.2em;
+            }
+            .navList {
+                list-style: none;
+                .aLista {
+                    color: $white;
+                    text-decoration: none;
+                    font-weight: 800;
+                    &:hover {
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+        .cajaContacto {
+            width: 30%;
+            margin-left: 12%;
+            margin-top: 1%;
+            .pb3 {
+                color: $white;
+                font-weight: 800;
+                margin-bottom: 10%;
+                font-size: 1.2em;
+            }
+            .pb2 {
+                color: $white;
+                margin-bottom: 2%;
+            } 
+            .pb7 {
+                color: $white;
+                font-weight: 800;
+                margin-bottom: 3%;
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+/* mediaqueries */
+@media (max-width: 1440px) {
+    body {
+        header {
+            .navContainer {
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+        header {
+            .navContainer {
+                .menu {
+                    margin-left: 3%;
+                    .inlineList {
+                        padding-top: 3%; 
+                    }
+                }
+            }
+        }
+        main {
+            h2 {
+                font-size: 2.2em;
+            }
+            .form {
+                img {
+                    width: 270px;
+                    height: 270px;
+                }
+            }
+        }
+        footer {
+            .cajaLinks {
+                margin-left: 13%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        header {
+            .navContainer {
+                .logo {
+                    width: 80px;
+                    height: auto;
+                }
+                .menu {
+                    display: none;
+                    margin-left: 3%;
+                    .inlineList {
+                        padding-top: 2.5%; 
+                        .navList {
+                            .aLista {
+                                font-size: 0.8em;
+                            }
+                        }
+                    }
+                }
+                .menu2 {
+                    display: inline-block;
+                    .aCart {
+                        .cart {
+                            font-size: 1em;
+                            left: 92%;
+                        }
+                    }
+                    .burguerMenu {
+                        .burger {
+                            font-size: 1.7em;
+                            top: 32%;
+                            left: 102%;
+                        }
+                    }
+                }
+            }
+        }
+        main {
+            h2 {
+                font-size: 1.8em;
+            }
+            .form {
+                width: 45%;
+                padding-bottom: 5%;
+                .userInfo {
+                    font-size: 0.9em;
+                }
+                .userType {
+                    font-size: 0.9em;
+                }
+                img {
+                    width: 250px;
+                    height: 250px;
+                }
+                a {
+                    font-size: 0.9em;
+                }
+            }
+        }
+        footer {
+            .cajaTienda {
+                .logo2 {
+                    width: 120px;
+                    height: auto;
+                }
+                .pb2 {
+                    font-size: 0.8em;
+                }
+            }
+            .cajaLinks {
+                margin-left: 14%;
+                .pb3 {
+                    font-size: 0.9em;
+                }
+                .navList {
+                    font-size: 0.8em;
+                }
+            }
+            .cajaContacto {
+                .pb3 {
+                    font-size: 0.9em;
+                }
+                .pb2 {
+                    font-size: 0.8em;
+                }
+                .pb7 {
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        header {
+            .navContainer {
+                .menu {
+                    display: none;
+                }
+                .logo {
+                    margin-left: 4%;
+                    margin-top: 4%;
+                    width: 50px;
+                    height: auto;
+                }
+                .menu2 {
+                    display: inline-block;
+                    i {
+                        font-size: 1.2em;
+                        left: 102%;
+                    }
+                    .burguerMenu {
+                        .burger {
+                            font-size: 1.7em;
+                            top: 23%;
+                            left: 102%;
+                        }
+                        .dropdown {
+                            width: 37%;
+                            left: 70%;
+                            top: 78%;
+                            .navList {
+                                .aLista {
+                                    font-size: 0.8em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        main {
+            h2 {
+                font-size: 1.5em;
+            }
+            .form {
+                width: 60%;
+                padding-bottom: 7%;
+                img {
+                    width: 220px;
+                    height: 220px;
+                }
+                .userInfo {
+                    font-size: 0.9em;
+                }
+                .userType {
+                    font-size: 0.9em;
+                }
+                a {
+                    font-size: 0.9em;
+                }
+                button {
+                    font-size: 0.9em;
+                }
+            }
+        }
+        footer {
+            ol, ul {
+                padding-left: 0rem;
+            }
+            .cajaTienda {
+                .logo2 {
+                    width: 80px;
+                    height: auto;
+                }
+                .pb2 {
+                    width: 135%;
+                    font-size: 0.8em;
+                }
+                .redes {
+                   a {
+                    .imgRedes {
+                        width: 20px;
+                        height: 18px;
+                    }
+                    }
+                } 
+            }
+            .cajaLinks {
+                padding-left: 0;
+                margin-left: 18%;
+                .pb3 {
+                    font-size: 0.9em;
+                }
+                .navList {
+                    font-size: 0.8em;
+                }
+            }
+            .cajaContacto {
+                .pb3 {
+                    font-size: 0.9em;
+                }
+                .pb2 {
+                    font-size: 0.8em;
+                }
+                .pb7 {
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+}

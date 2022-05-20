@@ -1,0 +1,553 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+/* Resets */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+body .ventana {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  background-color: #e5ecfd;
+  width: 40%;
+  color: #1c1c1c;
+  text-align: center;
+  padding: 5% 8%;
+  border: 3px solid #bdbdbd;
+  border-radius: 20px;
+}
+
+body .ventana .textoVentana {
+  font-size: 1.6em;
+  font-weight: 700;
+  width: 100%;
+}
+
+body .ventana .botonVentana {
+  background-color: red;
+  border-radius: 50px;
+  border: 2px solid red;
+  cursor: pointer;
+  color: white;
+  padding: 1% 1%;
+  text-decoration: none;
+  font-size: 1em;
+  margin-top: 20%;
+  font-size: 1.3em;
+  width: 100%;
+}
+
+body .hidden {
+  display: none;
+}
+
+body header {
+  padding-bottom: 1%;
+}
+
+body header h1 {
+  display: none;
+}
+
+body header .navContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0% 0.5%;
+  background-color: #f8ce15;
+}
+
+body header .navContainer .logo {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
+
+body header .navContainer .menu {
+  margin-top: 1%;
+  margin-left: 10%;
+  width: 80%;
+}
+
+body header .navContainer .menu .inlineList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2%;
+}
+
+body header .navContainer .menu .inlineList .navList {
+  list-style: none;
+  font-weight: 700;
+  margin-left: 13%;
+}
+
+body header .navContainer .menu .inlineList .navList .aLista {
+  text-decoration: none;
+  color: #1c1c1c;
+}
+
+body header .navContainer .menu .inlineList .navList .aLista:hover {
+  color: #fefefe;
+}
+
+body header .navContainer .menu2 {
+  display: none;
+  position: relative;
+  width: 80%;
+}
+
+body header .navContainer .menu2 .aCart {
+  text-decoration: none;
+  color: white;
+  margin-top: 2%;
+  margin-left: 70%;
+}
+
+body header .navContainer .menu2 .aCart .cart {
+  font-size: 0.8em;
+  position: absolute;
+  top: 26%;
+  left: 90%;
+  color: #fefefe;
+}
+
+body header .navContainer .menu2 .aCart .cart:hover {
+  color: #1c1c1c;
+}
+
+body header .navContainer .menu2 .burguerMenu:hover .dropdown {
+  display: block;
+}
+
+body header .navContainer .menu2 .burguerMenu .burger {
+  font-size: 1.1em;
+  position: absolute;
+  top: 25%;
+  left: 102%;
+  color: #fefefe;
+}
+
+body header .navContainer .menu2 .burguerMenu .burger:hover {
+  color: #1c1c1c;
+}
+
+body header .navContainer .menu2 .burguerMenu .dropdown {
+  display: none;
+  position: absolute;
+  top: 56%;
+  left: 85%;
+  width: 20%;
+  padding: 3% 22% 3% 3%;
+  z-index: 5;
+  background-color: #1c1c1c;
+}
+
+body header .navContainer .menu2 .burguerMenu .dropdown .navList {
+  list-style: none;
+  padding: 5% 5%;
+}
+
+body header .navContainer .menu2 .burguerMenu .dropdown .navList .aLista {
+  text-decoration: none;
+  list-style: none;
+  font-weight: 800;
+  color: #fefefe;
+  font-size: 0.9em;
+}
+
+body header .navContainer .menu2 .burguerMenu .dropdown .navList .aLista:hover {
+  color: #f8ce15;
+}
+
+body main h2 {
+  text-align: center;
+  margin-top: 3%;
+  font-weight: 700;
+}
+
+body main .form {
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid #4b4844;
+  width: 35%;
+  margin: auto;
+  margin-top: 4%;
+  padding: 2% 4% 4% 4%;
+  border-radius: 30px;
+}
+
+body main .form label .error input {
+  border-color: #ff6b5b;
+}
+
+body main .form label small {
+  visibility: hidden;
+  color: #ff6b5b;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+body main .form label small.error {
+  visibility: visible;
+}
+
+body main .form img {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
+
+body main .form .userInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 5%;
+}
+
+body main .form .userInfo input {
+  padding: 2% 2%;
+  margin-top: 3%;
+}
+
+body main .form .userType {
+  margin-bottom: 3%;
+}
+
+body main .form .userType input {
+  margin-right: 4%;
+}
+
+body main .form a {
+  text-decoration: none;
+  margin-left: 7%;
+}
+
+body main .form a:hover {
+  color: #f8ce15;
+}
+
+body main .form button {
+  background-color: red;
+  border-radius: 50px;
+  border: 2px solid red;
+  cursor: pointer;
+  color: white;
+  padding: 1% 1%;
+  text-decoration: none;
+  font-size: 1em;
+  margin-top: 8%;
+}
+
+body main .form button:hover {
+  background-color: black;
+  border: 2px solid black;
+}
+
+body main .form button a {
+  margin-right: 9%;
+  text-decoration: none;
+  color: white;
+}
+
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 5%;
+  padding: 3% 6%;
+  background-color: #1c1c1c;
+}
+
+body footer .cajaTienda {
+  width: 30%;
+}
+
+body footer .cajaTienda .pb2 {
+  color: #fefefe;
+  margin-bottom: 15%;
+}
+
+body footer .cajaTienda .logo2 {
+  width: 150px;
+  height: auto;
+  margin-bottom: 5%;
+}
+
+body footer .cajaTienda .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body footer .cajaTienda .redes a {
+  margin-right: 5%;
+}
+
+body footer .cajaTienda .redes a .imgRedes {
+  width: 30px;
+  height: 27px;
+}
+
+body footer .cajaLinks {
+  width: 30%;
+  margin-left: 18%;
+  margin-top: 1%;
+}
+
+body footer .cajaLinks .pb3 {
+  color: #fefefe;
+  font-weight: 800;
+  margin-bottom: 10%;
+  font-size: 1.2em;
+}
+
+body footer .cajaLinks .navList {
+  list-style: none;
+}
+
+body footer .cajaLinks .navList .aLista {
+  color: #fefefe;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+body footer .cajaLinks .navList .aLista:hover {
+  color: #f8ce15;
+}
+
+body footer .cajaContacto {
+  width: 30%;
+  margin-left: 12%;
+  margin-top: 1%;
+}
+
+body footer .cajaContacto .pb3 {
+  color: #fefefe;
+  font-weight: 800;
+  margin-bottom: 10%;
+  font-size: 1.2em;
+}
+
+body footer .cajaContacto .pb2 {
+  color: #fefefe;
+  margin-bottom: 2%;
+}
+
+body footer .cajaContacto .pb7 {
+  color: #fefefe;
+  font-weight: 800;
+  margin-bottom: 3%;
+  font-size: 1em;
+}
+
+/* mediaqueries */
+@media (max-width: 1024px) {
+  body header .navContainer .menu {
+    margin-left: 3%;
+  }
+  body header .navContainer .menu .inlineList {
+    padding-top: 3%;
+  }
+  body main h2 {
+    font-size: 2.2em;
+  }
+  body main .form img {
+    width: 270px;
+    height: 270px;
+  }
+  body footer .cajaLinks {
+    margin-left: 13%;
+  }
+}
+
+@media (max-width: 768px) {
+  body header .navContainer .logo {
+    width: 80px;
+    height: auto;
+  }
+  body header .navContainer .menu {
+    display: none;
+    margin-left: 3%;
+  }
+  body header .navContainer .menu .inlineList {
+    padding-top: 2.5%;
+  }
+  body header .navContainer .menu .inlineList .navList .aLista {
+    font-size: 0.8em;
+  }
+  body header .navContainer .menu2 {
+    display: inline-block;
+  }
+  body header .navContainer .menu2 .aCart .cart {
+    font-size: 1em;
+    left: 92%;
+  }
+  body header .navContainer .menu2 .burguerMenu .burger {
+    font-size: 1.7em;
+    top: 32%;
+    left: 102%;
+  }
+  body main h2 {
+    font-size: 1.8em;
+  }
+  body main .form {
+    width: 45%;
+    padding-bottom: 5%;
+  }
+  body main .form .userInfo {
+    font-size: 0.9em;
+  }
+  body main .form .userType {
+    font-size: 0.9em;
+  }
+  body main .form img {
+    width: 250px;
+    height: 250px;
+  }
+  body main .form a {
+    font-size: 0.9em;
+  }
+  body footer .cajaTienda .logo2 {
+    width: 120px;
+    height: auto;
+  }
+  body footer .cajaTienda .pb2 {
+    font-size: 0.8em;
+  }
+  body footer .cajaLinks {
+    margin-left: 14%;
+  }
+  body footer .cajaLinks .pb3 {
+    font-size: 0.9em;
+  }
+  body footer .cajaLinks .navList {
+    font-size: 0.8em;
+  }
+  body footer .cajaContacto .pb3 {
+    font-size: 0.9em;
+  }
+  body footer .cajaContacto .pb2 {
+    font-size: 0.8em;
+  }
+  body footer .cajaContacto .pb7 {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  body header .navContainer .menu {
+    display: none;
+  }
+  body header .navContainer .logo {
+    margin-left: 4%;
+    margin-top: 4%;
+    width: 50px;
+    height: auto;
+  }
+  body header .navContainer .menu2 {
+    display: inline-block;
+  }
+  body header .navContainer .menu2 i {
+    font-size: 1.2em;
+    left: 102%;
+  }
+  body header .navContainer .menu2 .burguerMenu .burger {
+    font-size: 1.7em;
+    top: 23%;
+    left: 102%;
+  }
+  body header .navContainer .menu2 .burguerMenu .dropdown {
+    width: 37%;
+    left: 70%;
+    top: 78%;
+  }
+  body header .navContainer .menu2 .burguerMenu .dropdown .navList .aLista {
+    font-size: 0.8em;
+  }
+  body main h2 {
+    font-size: 1.5em;
+  }
+  body main .form {
+    width: 60%;
+    padding-bottom: 7%;
+  }
+  body main .form img {
+    width: 220px;
+    height: 220px;
+  }
+  body main .form .userInfo {
+    font-size: 0.9em;
+  }
+  body main .form .userType {
+    font-size: 0.9em;
+  }
+  body main .form a {
+    font-size: 0.9em;
+  }
+  body main .form button {
+    font-size: 0.9em;
+  }
+  body footer ol, body footer ul {
+    padding-left: 0rem;
+  }
+  body footer .cajaTienda .logo2 {
+    width: 80px;
+    height: auto;
+  }
+  body footer .cajaTienda .pb2 {
+    width: 135%;
+    font-size: 0.8em;
+  }
+  body footer .cajaTienda .redes a .imgRedes {
+    width: 20px;
+    height: 18px;
+  }
+  body footer .cajaLinks {
+    padding-left: 0;
+    margin-left: 18%;
+  }
+  body footer .cajaLinks .pb3 {
+    font-size: 0.9em;
+  }
+  body footer .cajaLinks .navList {
+    font-size: 0.8em;
+  }
+  body footer .cajaContacto .pb3 {
+    font-size: 0.9em;
+  }
+  body footer .cajaContacto .pb2 {
+    font-size: 0.8em;
+  }
+  body footer .cajaContacto .pb7 {
+    font-size: 0.8em;
+  }
+}
+/*# sourceMappingURL=login.css.map */

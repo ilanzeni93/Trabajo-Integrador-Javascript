@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Off the Wall - Tienda de Posters">
+    <meta name="keywords" content="Posters, Laminas, Cuadros, Arte">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/c9552e47da.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Burguer House</title>
+</head>
+<body>
+    <div class="cajaContainer">
+        <header>
+            <h1>OFF the Wall: Posters</h1>
+            <div class="navContainer">
+                <a href="./index.html" class="aLogo"><img src="./assets/Logo.png" class="logo"></a>
+                <nav class="menu">
+                    <ul class="inlineList">
+                        <li class="navList"><a href="./index.html" class="aLista">Home</a></li> 
+                        <li class="navList"><a href="./productos.html" class="aLista">Hamburguesas</a></li> 
+                        <li class="navList"><a href="./login.html" class="aLista">Login</a></li> 
+                    </ul>
+                </nav>
+
+                <!-- Menu hamburguesa -->
+                <nav class="menu2">
+                    <div class="burguerMenu">
+                        <i class="fa-solid fa-bars burger"></i>
+                        <ul class="dropdown">
+                            <li class="navList"><a href="./index.html" class="aLista">Home</a></li> 
+                            <li class="navList"><a href="./productos.html" class="aLista">Hamburguesas</a></li> 
+                            <li class="navList"><a href="./login.html" class="aLista">Login</a></li> 
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="bannerContainer">
+                <div class="banner">
+                    <p class="p1Banner">Burger House</p>
+                    <p class="p2Banner">Probá una nueva experiencia de hamburguesas!</p>
+                </div>
+                <img src="./assets/burger.png" class="fondo">
+            </div>
+        </header> 
+        
+        <main>
+            <!-- Carrousel -->
+            <h2 class="t1">PRODUCTOS DESTACADOS</h2>
+            <div class="destacados">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./assets/b1.jpg" class="d-block w-20" alt="Burger Amarican Fat - Ver producto">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/b2.jpg" class="d-block w-30" alt="Burger Fried Chicken - Ver producto">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/b3.jpg" class="d-block w-30" alt="Burger Doble con bacon - Ver producto">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/b4.jpg" class="d-block w-30" alt="Burger Whooper con bacon - Ver producto">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+            
+            <!-- Sobre Nosotros -->
+            <h2 class="t2">SOBRE NOSOTROS</h2>
+            <div class="cajaDescripcion">
+                <p class="p1">Burger House se creó por un grupo de personas apasionadas por las hamburguesas. Entendemos las hamburguesas como algo más que fast food, también como una oportunidad de probar nuevos ingredientes y combinaciones, disfrutar del contraste de sabores, pero sobre todo, quedar con amigos, pasar un buen rato y desconectar. Te invitamos a que las pruebes! </p>
+                <img src="./assets/sobre nosotros.png" class="imgDescripcion">
+            </div>
+
+            <!-- Promociones -->
+            <h2 class="t2 t3">PROMOCIONES</h2>
+            <div class="cajaPromociones">
+                <div class="card" style="width: 25%;">
+                    <img src="./assets/promo1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">2x1 Burger American Fat</h5>
+                      <p class="card-text">Hamburguesa con 1 medallón de 150g, queso emmental, bacon, aros de cebolla, tomate y lechuga.</p>
+                      <a href="./productos.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                
+                <div class="card" style="width: 25%;">
+                    <img src="./assets/promo2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">2x1 Burger Whooper con bacon</h5>
+                      <p class="card-text">Hamburguesa con 1 medallón de 120g, doble queso cheddar, bacon, tomate, lechuga y pan de papa.</p>
+                      <a href="./productos.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+    
+                <div class="card" style="width: 25%;">
+                    <img src="./assets/promo3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">2x1 Burger Fried Chicken</h5>
+                      <p class="card-text">Hamburguesa con pieza de pollo frito, doble queso cheddar, tomate, lechuga y salsa especial </p>
+                      <a href="./productos.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="cajaTienda">
+                <img src="./assets/Logo2.png" class="logo2">
+                <p class="pb2">Burger House - probá una nueva experiencia!</p>
+                <div class="redes">
+                    <a href=""><img src="./assets/facebook.png" class="imgRedes"></a>
+                    <a href=""><img src="./assets/twitter.png" class="imgRedes"></a>
+                    <a href=""><img src="./assets/instagram.png" class="imgRedes"></a>
+                </div>
+            </div>
+
+            <div class="cajaLinks">
+                <p class="pb3">Accesos Rápidos</p>
+                <ul class="linksRapidos">
+                    <li class="navList"><a href="./index.html" class="aLista">Home</a></li> 
+                    <li class="navList"><a href="./productos.html" class="aLista">Hamburguesas</a></li>  
+                    <li class="navList"><a href="./login.html" class="aLista">Login</a></li>  
+                </ul>
+            </div>
+
+            <div class="cajaContacto">
+                <p class="pb3">Contacto</p>
+                <p class="pb7">Ubicación:</p>
+                <p class="pb2">Ciudad Autónoma de Buenos Aires</p>
+                <p class="pb7">Número:</p>
+                <p class="pb2">11 5732-1163</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
